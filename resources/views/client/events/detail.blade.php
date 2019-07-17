@@ -26,7 +26,7 @@
                             </div> <!-- /.text-wrapper -->
                         </div>
                         <div class="col-lg-6 order-lg-first"><img src="{{asset('uploads/events')}}/{{$event->image}}"
-                                                                  alt="{{$event->getImageName($event->image)}}"
+                                                                  alt="{{ getImageName($event->image) }}"
                                                                   class="event-img"></div>
                     </div>
                     @if($images->count() > 0)
@@ -80,13 +80,13 @@
                                 <table>
                                     <tr>
                                         <td>Bắt đầu:</td>
-                                        <td>{{$event->getTime($event->start_at)}}
-                                            ngày {{$event->getDate($event->start_at)}}</td>
+                                        <td>{{ getTime($event->start_at) }}
+                                            ngày {{ getDateEvent($event->start_at) }}</td>
                                     </tr>
                                     <tr>
                                         <td>Kết thúc:</td>
-                                        <td>{{$event->getTime($event->end_at)}}
-                                            ngày {{$event->getDate($event->end_at)}}</td>
+                                        <td>{{ getTime($event->end_at) }}
+                                            ngày {{ getDateEvent($event->end_at) }}</td>
                                     </tr>
                                 </table>
                             </div> <!-- /.details-box -->

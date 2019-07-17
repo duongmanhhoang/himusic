@@ -24,7 +24,7 @@
                     @foreach($products as $product)
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 product-item">
                             <div class="product-item-image">
-                                <img src="{{asset('uploads/products')}}/{{$product->image}}" class="img-fluid" alt="{{$product->getImageName($product->image)}}">
+                                <img src="{{asset('uploads/products')}}/{{$product->image}}" class="img-fluid" alt="{{ getImageName($product->image) }}">
                             </div>
                             <div class="product-item-info">
                                 <h1 class="product-item-name">{{$product->name}}</h1>

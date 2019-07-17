@@ -10,7 +10,7 @@
                 @foreach($classes as $class)
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="single-block">
-                            <div class="img-box"><img src="{{asset('uploads/classes')}}/{{$class->image}}" alt="{{$class->getImageName($class->image)}}" class="classes-img"></div>
+                            <div class="img-box"><img src="{{asset('uploads/classes')}}/{{$class->image}}" alt="{{ getImageName($class->image) }}" class="classes-img"></div>
                             <div class="text">
                                 <h6><a href="{{route('client.classes.detail' , $class->slug)}}">{{$class->name}}</a></h6>
                                 <p>{{$class->description}}</p>
