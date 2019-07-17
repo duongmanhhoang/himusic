@@ -10,7 +10,7 @@
 <!-- menu  -->
 <script src="{{asset('client/vendors/menu/src/js/jquery.slimmenu.js')}}"></script>
 <!-- AOS js -->
-<script src="{{asset('vendors')}}"></script>
+<script src="{{asset('client/vendors/aos-next/dist/aos.js')}}"></script>
 <!-- owl.carousel -->
 <script src="{{asset('client/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
 <!-- js count to -->
