@@ -22,7 +22,7 @@
                         <div class="side-bar-new-product row">
                             <div class="col-4">
                                 <img src="{{asset('uploads/products')}}/{{$latest_product->image}}"
-                                     alt="{{$latest_product->getImageName($latest_product->image)}}" class="img-fluid"
+                                     alt="{{ getImageName($latest_product->image) }}" class="img-fluid"
                                      style="width: 70px;">
                             </div>
                             <div class="col-8">

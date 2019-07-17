@@ -20,7 +20,7 @@
             @foreach($latest_posts as $latest_post)
                 <li>
                     <a href="{{route('client.posts.detail', $latest_post->slug)}}" class="title">{{$latest_post->title}}</a>
-                    <div class="date">{{$latest_post->createdAt($latest_post)}}</div>
+                    <div class="date">{{ createdAt($latest_post) }}</div>
                     <a href="{{route('client.posts.detail', $latest_post->slug)}}" class="read-more">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                 </li>
             @endforeach

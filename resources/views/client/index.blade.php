@@ -8,7 +8,7 @@
 			==============================================
 			-->
     <div class="section-spacing our-feature-one">
-        <img src="{{ asset('uploads/static/1.png') }}" alt="" class="shape">
+        <img src="{{ asset('uploads/static/1.png') }}" alt="himusic" class="shape">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -38,10 +38,10 @@
     ==============================================
     -->
     <div class="section-spacing about-us">
-        <img src="{{ asset('uploads/static/3.png') }}" alt="" class="shape-two">
+        <img src="{{ asset('uploads/static/3.png') }}" alt="himusc" class="shape-two">
         <div class="main-container clearfix">
             <div class="inner-container left-content">
-                <img src="{{ asset('uploads/static/2.png') }}" alt="" class="shape" data-aos="zoom-in-up"
+                <img src="{{ asset('uploads/static/2.png') }}" alt="himusic" class="shape" data-aos="zoom-in-up"
                      data-aos-duration="1000"
                      data-aos-delay="150">
                 <div class="inner-col">
@@ -50,7 +50,7 @@
                         <div class="dot" data-aos="fade-up" data-aos-delay="350"></div>
                         <div class="dot" data-aos="fade-up" data-aos-delay="550"></div>
                         <div class="dot" data-aos="fade-up" data-aos-delay="750"></div>
-                        <img src="{{ asset('uploads/static/1.jpg') }}" alt="">
+                        <img src="{{ asset('uploads/static/1.jpg') }}" alt="himusic">
                     </div> <!-- /.img-box -->
                 </div> <!-- /.inner-col -->
             </div> <!-- /.inner-container -->
@@ -64,9 +64,9 @@
                     <p>Với quá trình hoạt động được gần 10 năm, Himusic đã đào tạo ra rất nhiều tài năng trẻ. Vậy bạn
                         còn chần chừ gì nữa mà không tham gia ngay với chúng tôi</p>
                     <ul class="ceo-info clearfix">
-                        <li><img src="{{ asset('uploads/static/sign.png') }}" alt=""></li>
+                        <li><img src="{{ asset('uploads/static/sign.png') }}" alt="himusic"></li>
                         <li class="info">
-                            <img src="{{ asset('uploads/static/2.jpg') }}" alt="" class="ceo-image">
+                            <img src="{{ asset('uploads/static/2.jpg') }}" alt="himusic" class="ceo-image">
                             <div class="name">
                                 <h6>Ánh Dương</h6>
                                 <p>CEO & Founder of Himusic</p>
@@ -86,8 +86,8 @@
     -->
     <div class="section-spacing">
         <div class="our-services">
-            <img src="{{ asset('uploads/static/5.png') }}" alt="" class="shape-one">
-            <img src="{{ asset('uploads/static/6.png') }}" alt="" class="shape-two">
+            <img src="{{ asset('uploads/static/5.png') }}" alt="himusic" class="shape-one">
+            <img src="{{ asset('uploads/static/6.png') }}" alt="himusic" class="shape-two">
             <div class="container">
                 <div class="theme-title-two">
                     <h2 class="main-title">Loại hình giảng dạy</h2>
@@ -213,7 +213,7 @@
                 @foreach ($classes as $class)
                     <div class="item">
                         <div class="single-block">
-                            <div class="img-box"><img src="{{ asset('uploads/classes') }}/{{ $class->image }}" alt="" class="classes-img">
+                            <div class="img-box"><img src="{{ asset('uploads/classes') }}/{{ $class->image }}" alt="{{ getImageName($class->image) }}" class="classes-img">
                             </div>
                             <div class="text">
                                 <h6><a href="{{ route('client.classes.detail' , $class->slug) }}">{{ $class->name }}</a></h6>
@@ -263,7 +263,7 @@
                         <div class="item">
                             <div class="text-wrapper">
                                 <p>{{ $testimonial->detail }}</p>
-                                <img src="{{ asset('uploads/testimonials') }}/{{ $testimonial->image }}" alt="">
+                                <img src="{{ asset('uploads/testimonials') }}/{{ $testimonial->image }}" alt="{{ getImageName($testimonial->image) }}">
                             </div>
                         </div>
                     @endforeach
@@ -286,13 +286,13 @@
                 <h2 class="main-title">Những sự kiện mới nhất</h2>
             </div> <!-- /.theme-title-one -->
             <div class="main-wrapper">
-                <img src="{{ asset('uploads/static/23.png') }}" alt="" class="shape">
+                <img src="{{ asset('uploads/static/23.png') }}" alt="himusic" class="shape">
                 @foreach($events as $event)
                     <div class="table-responsive event-table">
                         <table class="table">
                             <tr>
-                                <td class="date">{{$event->getDate($event->start_at)}}</td>
-                                <td class="time">Bắt đầu lúc: {{$event->getTime($event->start_at)}}</td>
+                                <td class="date">{{ getDateEvent($event->start_at) }}</td>
+                                <td class="time">Bắt đầu lúc: {{ getTime($event->start_at) }}</td>
                                 <td class="title">{{$event->title}}</td>
                                 <td class="check-button"><a href="{{route('client.events.detail' , $event->slug)}}">Chi tiết</a></td>
                             </tr>

@@ -8,13 +8,13 @@
         <div class="row">
             <div class="col-md-6">
                 <img src="{{asset('uploads/products')}}/{{$product->image}}" class="img-fluid"
-                     alt="{{$product->getImageName($product->image)}}">
+                     alt="{{ getImageName($product->image) }}">
 
                 <div class="product-slide-img">
                     <div class="owl-carousel owl-theme">
                         @foreach($images as $image)
                             <div><img src="{{asset('uploads/images')}}/{{$image->name}}" class="img-fluid"
-                                      alt="{{$image->getImageName($image->name)}}"></div>
+                                      alt="{{ getImageName($product->image) }}"></div>
                         @endforeach
                     </div>
 

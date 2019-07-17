@@ -7,7 +7,7 @@
     <div class="section-spacing our-class-details">
         <div class="container">
             <img src="{{asset('uploads/classes')}}/{{$class->image}}"
-                 alt="{{$class->getImageName($class->image)}}" class="main-img">
+                 alt="{{ getImageName($class->image) }}" class="main-img">
             <h2 class="title">{{$class->name}}</h2>
             {!! $class->body !!}
         </div>

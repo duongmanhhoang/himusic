@@ -11,10 +11,10 @@ $post->increment('views');
             <div class="row">
                 <div class="col-xl-9 col-lg-8 col-12 blog-details">
                     <div class="single-blog-post">
-                        <div class="img-box"><img src="{{asset('uploads/posts')}}/{{$post->image}}" alt="{{$post->getImageName($post->image)}}"></div>
+                        <div class="img-box"><img src="{{asset('uploads/posts')}}/{{$post->image}}" alt="{{ getImageName($post->image) }}"></div>
                         <div class="post-meta">
                             <ul class="date-meta">
-                                <li><i class="fa fa-clock-o" aria-hidden="true"></i> {{$post->createdAt($post)}}</li>
+                                <li><i class="fa fa-clock-o" aria-hidden="true"></i> {{ createdAt($post) }}</li>
                                 <li><i class="fa fa-comments" aria-hidden="true"></i> {{$post->views}}</li>
                             </ul>
                             <h2 class="blog-title">{{$post->title}}</h2>

@@ -12,22 +12,21 @@
                     <div class="row">
                         <div class="col-lg-6 order-lg-last">
                             <div class="text-wrapper">
-
                                 <img src="{{asset('client/images/shape/25.png')}}"
-                                     alt="{{$latest_event->getImageName($latest_event->image)}}" class="shape-one">
+                                     alt="{{ getImageName($latest_event->image) }}" class="shape-one">
                                 <div class="theme-title-one">
                                     <h2 class="main-title">{{$latest_event->title}}</h2>
                                 </div> <!-- /.theme-title-one -->
                                 <p>{!! substr($latest_event->body , 0 , 200) !!}</p>
-                                <div class="date">Bắt đầu vào : {{$latest_event->getTime($latest_event->start_at)}}
-                                    ngày {{$latest_event->getDate($latest_event->start_at)}}</div>
+                                <div class="date">Bắt đầu vào : {{ getTime($latest_event->start_at) }}
+                                    ngày {{ getDateEvent($latest_event->start_at) }}</div>
                                 <a href="#" class="button-one">Xem thêm</a>
                                 <div id="count" class="clearfix row"></div>
                             </div> <!-- /.text-wrapper -->
                         </div>
                         <div class="col-lg-6 order-lg-first"><img
                                     src="  {{asset('uploads/events')}}/{{$latest_event->image}}"
-                                    alt="{{$latest_event->getImageName($latest_event->image)}}" class="event-img"></div>
+                                    alt="{{ getImageName($latest_event->image) }}" class="event-img"></div>
                     </div>
                 </div>
             </div> <!-- /.event-uppper-text -->
@@ -47,8 +46,8 @@
                     <div class="table-responsive event-table">
                         <table class="table">
                             <tr>
-                                <td class="date">{{$event->getDate($event->start_at)}}</td>
-                                <td class="time">Bắt đầu lúc: {{$event->getTime($event->start_at)}}</td>
+                                <td class="date">{{ getDateEvent($event->start_at) }}</td>
+                                <td class="time">Bắt đầu lúc: {{ getTime($event->start_at) }}</td>
                                 <td class="title">{{$event->title}}</td>
                                 <td class="check-button"><a href="{{route('client.events.detail' , $event->slug)}}">Chi tiết</a></td>
                             </tr>
