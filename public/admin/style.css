@@ -1,0 +1,7 @@
+.admin-topbar{
+    margin-top: 20px;
+    list-style-type: none;
+}
+.admin-topbar li {
+    display: inline-block;
+}
