@@ -50,29 +50,29 @@
 **/
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800|Roboto:400,700');
 /*----bootstrap css ----- */
-@import url('../vendor/bootstrap/css/bootstrap.min.css');
+@import url('../vendors/bootstrap/css/bootstrap.min.css');
 /*----camera-slider---*/
-@import url('../vendor/Camera-master/css/camera.css');
+@import url('../vendors/Camera-master/css/camera.css');
 /*------- menu ------*/
-@import url('../vendor/menu/dist/css/slimmenu.css');
+@import url('../vendors/menu/dist/css/slimmenu.css');
 /*----font awesome -------*/
 @import url('../fonts/font-awesome/css/font-awesome.min.css');
 /*----owl-carousel css----*/
-@import url('../vendor/owl-carousel/owl.carousel.css');
-@import url('../vendor/owl-carousel/owl.theme.css');
-@import url('../vendor/owl-carousel/animate.css');
+@import url('../vendors/owl-carousel/owl.carousel.css');
+@import url('../vendors/owl-carousel/owl.theme.css');
+@import url('../vendors/owl-carousel/animate.css');
 /*-------- AOS css ------*/
-@import url('../vendor/aos-next/dist/aos.css');
+@import url('../vendors/aos-next/dist/aos.css');
 /*----------- Fancybox css -------*/
-@import url('../vendor/fancybox/dist/jquery.fancybox.min.css');
+@import url('../vendors/fancybox/dist/jquery.fancybox.min.css');
 /*------------- Map -------------*/
-@import url('../vendor/sanzzy-map/dist/snazzy-info-window.min.css');
+@import url('../vendors/sanzzy-map/dist/snazzy-info-window.min.css');
 /*----calendar css--------*/
-@import url('../vendor/monthly-master/css/monthly.css');
+@import url('../vendors/monthly-master/css/monthly.css');
 /*----Time-picker---------*/
-@import url('../vendor/time-picker/jquery.timepicker.css');
+@import url('../vendors/time-picker/jquery.timepicker.css');
 /*----jquery ui css-------*/
-@import url('../vendor/jquery-ui/jquery-ui.css');
+@import url('../vendors/jquery-ui/jquery-ui.css');
 /*----Flaticon-------*/
 @import url('../fonts/icon/font/flaticon.css');
 

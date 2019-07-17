@@ -1,23 +1,23 @@
-<script src="{{asset('client/vendor/jquery.2.2.3.min.js')}}"></script>
+<script src="{{asset('client/vendors/jquery.2.2.3.min.js')}}"></script>
 <!-- Popper js -->
-<script src="{{asset('client/vendor/popper.js/popper.min.js')}}"></script>
+<script src="{{asset('client/vendors/popper.js/popper.min.js')}}"></script>
 <!-- Bootstrap JS -->
-<script src="{{asset('client/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('client/vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Camera Slider -->
-<script src='{{asset('client/vendor/Camera-master/scripts/jquery.mobile.customized.min.js')}}'></script>
-<script src='{{asset('client/vendor/Camera-master/scripts/jquery.easing.1.3.js')}}'></script>
-<script src='{{asset('client/vendor/Camera-master/scripts/camera.min.js')}}'></script>
+<script src='{{asset('client/vendors/Camera-master/scripts/jquery.mobile.customized.min.js')}}'></script>
+<script src='{{asset('client/vendors/Camera-master/scripts/jquery.easing.1.3.js')}}'></script>
+<script src='{{asset('client/vendors/Camera-master/scripts/camera.min.js')}}'></script>
 <!-- menu  -->
-<script src="{{asset('client/vendor/menu/src/js/jquery.slimmenu.js')}}"></script>
+<script src="{{asset('client/vendors/menu/src/js/jquery.slimmenu.js')}}"></script>
 <!-- AOS js -->
-<script src="{{asset('client/vendor/aos-next/dist/aos.js')}}"></script>
+<script src="{{asset('vendors')}}"></script>
 <!-- owl.carousel -->
-<script src="{{asset('client/vendor/owl-carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('client/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
 <!-- js count to -->
-<script src="{{asset('client/vendor/jquery.appear.js')}}"></script>
-<script src="{{asset('client/vendor/jquery.countTo.js')}}"></script>
+<script src="{{asset('client/vendors/jquery.appear.js')}}"></script>
+<script src="{{asset('client/vendors/jquery.countTo.js')}}"></script>
 <!-- Fancybox -->
-<script src="{{asset('client/vendor/fancybox/dist/jquery.fancybox.min.js')}}"></script>
+<script src="{{asset('client/vendors/fancybox/dist/jquery.fancybox.min.js')}}"></script>
 
 <!-- Theme js -->
 <script src="{{asset('client/js/theme.js')}}"></script>
